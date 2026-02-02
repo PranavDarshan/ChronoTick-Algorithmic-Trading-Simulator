@@ -82,15 +82,6 @@ A sophisticated paper trading platform that allows you to replay historical mark
    pip install -r requirements.txt
    ```
 
-4. **Configure environment**
-   ```bash
-   # Create .env file in backend directory
-   cp .env.example .env
-   
-   # Edit .env with your configuration
-   nano .env
-   ```
-
 ### Running the Application
 
 1. **Start the backend server**
