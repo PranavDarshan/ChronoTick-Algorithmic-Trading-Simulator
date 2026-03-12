@@ -66,8 +66,8 @@ A sophisticated paper trading platform that allows you to replay historical mark
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/market-replay-simulator.git
-   cd market-replay-simulator
+   git clone https://github.com/PranavDarshan/ChronoTick-Algorithmic-Trading-Simulator
+   cd ChronoTick-Algorithmic-Trading-Simulator
    ```
 
 2. **Install frontend dependencies**
@@ -409,7 +409,7 @@ Contributions are welcome! Please follow these guidelines:
 ## Getting Help
 
 1. **Check the [Usage Guide](USAGE.md)** for detailed feature explanations
-2. **Search [existing issues](https://github.com/yourusername/market-replay-simulator/issues)** for similar problems
+2. **Search [existing issues](https://github.com/PranavDarshan/ChronoTick-Algorithmic-Trading-Simulator/issues)** for similar problems
 3. **Join our community** for discussions and support
 4. **Create a new issue** if you can't find a solution
 
