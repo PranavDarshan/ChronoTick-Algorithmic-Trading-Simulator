@@ -15,7 +15,8 @@ A sophisticated paper trading platform that allows you to replay historical mark
 3. Currently, the demo website feauteres stock symbols: NIFTY50, NIFTY100, BANK NIFTY
 4. All of the data for these are obtained from the kaggle website https://www.kaggle.com/datasets/debashis74017/nifty-50-minute-data
 5. Other data can be added to the database to update the demo website by creating an open issue or you can fork and deploy this on your own on Render and Vercel.
-6. Data exists from 2015-01-09 09:15:00 to 2026-01-22 12:45:00
+6. Data exists from 2015-01-09 to 2026-01-22
+7. My Supabase already consists of 3M rows
 
 ## Features
 
