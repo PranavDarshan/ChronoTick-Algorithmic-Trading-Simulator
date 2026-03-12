@@ -537,7 +537,7 @@ export default function Dashboard() {
   // Fetch symbols
   const fetchSymbols = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/symbols")
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/symbols`)
       const data = await response.json()
       if (data.symbols?.length) {
         setSymbols(data.symbols)
