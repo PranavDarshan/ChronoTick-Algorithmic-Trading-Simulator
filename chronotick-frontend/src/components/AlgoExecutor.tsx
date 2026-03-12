@@ -92,7 +92,7 @@ export default function AlgoExecutor({
 
   // Total account value = starting capital + all P&L (realized + unrealized)
   const totalValue = initialCapital + realizedPnL + unrealizedPnL
-  const totalPnL = realizedPnL + unrealizedPnL
+  const _totalPnL = realizedPnL + unrealizedPnL
   const returnPercent = ((totalValue - initialCapital) / initialCapital) * 100
 
   const winningTrades = closedPositions.filter(p => {
