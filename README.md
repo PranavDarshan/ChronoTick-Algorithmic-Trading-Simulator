@@ -106,8 +106,7 @@ A sophisticated paper trading platform that allows you to replay historical mark
 ## Documentation
 
 - **[Usage Guide](USAGE.md)** - Comprehensive user manual with all features
-- **[API Documentation](docs/API.md)** - Backend API reference *(if available)*
-- **[Strategy Development Guide](docs/STRATEGIES.md)** - How to write trading strategies *(if available)*
+- **[API Documentation](https://github.com/PranavDarshan/ChronoTick-Algorithmic-Trading-Simulator/blob/main/backend/API.md)** - Backend API reference 
 
 ---
 
