@@ -1,6 +1,6 @@
 type Props = {
-  symbols: string[]
-  symbol: string
+  symbols: string[] 
+  symbol: string 
   setSymbol: (v: string) => void
   start: string
   setStart: (v: string) => void
@@ -40,9 +40,9 @@ const labelStyle = {
 }
 
 export function TopBar({
-  symbols,
-  symbol,
-  setSymbol,
+  symbols: _symbols,
+  symbol: _symbol,
+  setSymbol: _setSymbol,
   start,
   setStart,
   end,

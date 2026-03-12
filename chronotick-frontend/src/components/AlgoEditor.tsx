@@ -181,7 +181,7 @@ export default function AlgoEditor({ onSave, savedStrategies, onLoad, onDelete, 
   const [code, setCode] = useState(EXAMPLE_STRATEGY)
   const [strategyName, setStrategyName] = useState("SMA Crossover")
   const [testResult, setTestResult] = useState<any>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  const [_isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [showExamples, setShowExamples] = useState(false)
   const [autoTest, setAutoTest] = useState(false)
