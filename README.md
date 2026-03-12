@@ -8,6 +8,14 @@ A sophisticated paper trading platform that allows you to replay historical mark
 ![Python](https://img.shields.io/badge/Python-3.8+-3776ab?logo=python&logoColor=white)
 
 ---
+## Things to keep in mind for the demo
+
+1. Demo website: https://chrono-tick-algorithmic-trading-sim.vercel.app
+2. The demo fronted is hosted on Vercel, backend is hosted on Render and the database of stocks is hosted on Supabase.
+3. Currently, the demo website feauteres stock symbols: NIFTY50, NIFTY100, BANK NIFTY
+4. All of the data for these are obtained from the kaggle website https://www.kaggle.com/datasets/debashis74017/nifty-50-minute-data
+5. Other data can be added to the database to update the demo website by creating an open issue or you can fork and deploy this on your own on Render and Vercel.
+6. Data exists from 2015-01-09 09:15:00 to 2026-01-22 12:45:00
 
 ## Features
 
