@@ -2,9 +2,10 @@
 
 A sophisticated paper trading platform that allows you to replay historical market data and test trading strategies in a realistic environment. Built with React, TypeScript, and Python, this simulator supports both manual trading and algorithmic trading with comprehensive analytics and risk management.
 
-![React](https://img.shields.io/badge/React-18.x-61dafb.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6.svg)
-![Python](https://img.shields.io/badge/Python-3.8+-3776ab.svg)
+![React](https://img.shields.io/badge/React-18.x-61dafb?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-20.19%2B-339933?logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-3776ab?logo=python&logoColor=white)
 
 ---
 
