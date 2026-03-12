@@ -8,14 +8,10 @@ from app.api.algo_trading_backend import router as algo_router
 
 
 app = FastAPI(title="Market Replay Simulator")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",      # Vite dev server
-        "http://127.0.0.1:5173",
-        "https://chrono-tick-algorithmic-trading-sim.vercel.app"
-    ],
-    allow_origin_regex=r"https://chrono-tick-algorithmic-trading-sim.*\.vercel\.app",
+    allow_origins=["*"],   # allow all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
