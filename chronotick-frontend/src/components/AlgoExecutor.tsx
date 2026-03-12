@@ -957,7 +957,7 @@ useEffect(() => {
     
     closedPositions.forEach(pos => {
       const entryTime = new Date(pos.timestamp).toLocaleString()
-      const exitTime = pos.exitTimestamp ? new Date(pos.exitTimestamp).toLocaleString() : 'N/A'
+      const _exitTime = pos.exitTimestamp ? new Date(pos.exitTimestamp).toLocaleString() : 'N/A'
       const pnl = pos.pnl || (pos.exitPrice 
         ? (pos.side === 'BUY' 
           ? (pos.exitPrice - pos.entryPrice) * pos.quantity 
