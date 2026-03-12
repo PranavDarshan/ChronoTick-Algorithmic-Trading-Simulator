@@ -9,7 +9,7 @@ type Props = {
   currentCandles: Candle[]
   currentPrice: number
 }
-
+const API = import.meta.env.VITE_API_URL
 const EXAMPLE_STRATEGY = `def strategy(candles, current_price, available_capital, total_capital, positions):
     """
     Simple Moving Average Crossover Strategy
@@ -218,7 +218,7 @@ export default function AlgoEditor({ onSave, savedStrategies, onLoad, onDelete, 
     setError(null)
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/execute-strategy", {
+      const response = await fetch(`${API}/api/execute-strategy`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
