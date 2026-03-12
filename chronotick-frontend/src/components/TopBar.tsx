@@ -1,7 +1,7 @@
 type Props = {
-  symbols: string[]
-  symbol: string
-  setSymbol: (v: string) => void
+  symbols: _symbol
+  symbol: _symbols
+  setSymbol: _setsymbols
   start: string
   setStart: (v: string) => void
   end: string
