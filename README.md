@@ -87,10 +87,10 @@ A sophisticated paper trading platform that allows you to replay historical mark
 
 1. **Start the backend server**
    ```bash
-      cd backend
-      pip install -r requirements.txt
-      alembic upgrade head
-      uvicorn app.main:app --reload
+   cd backend
+   pip install -r requirements.txt
+   alembic upgrade head
+   uvicorn app.main:app --reload
    ```
    Backend runs on `http://127.0.0.1:8000`
 
