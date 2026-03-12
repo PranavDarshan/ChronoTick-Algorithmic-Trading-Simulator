@@ -24,6 +24,7 @@ export function useReplaySocket(params: Params) {
   const lastCommandSentRef = useRef<string | null>(null)
   const playingRef = useRef(params.playing)
   const [isConnected, setIsConnected] = useState(false)
+  const API = import.meta.env.VITE_API_URL
 
   // Update playing ref whenever params change
   useEffect(() => {
@@ -117,7 +118,7 @@ export function useReplaySocket(params: Params) {
     setIsConnected(false)
 
     const ws = new WebSocket(
-      "ws://127.0.0.1:8000/ws/replay" +
+      API.replace(/^http/, "ws") + "/ws"+
         `?symbol=${encodeURIComponent(params.symbol)}` +
         `&start=${encodeURIComponent(params.start)}` +
         `&end=${encodeURIComponent(params.end)}` +
@@ -125,7 +126,7 @@ export function useReplaySocket(params: Params) {
         `&time_scale=${params.timeScale}` +
         `&gap_scale=${params.gapScale}`
     )
-
+    
     console.log("[CONNECTION EFFECT] WebSocket created, readyState:", ws.readyState)
     
     // Set wsRef IMMEDIATELY so it's available when onopen fires
