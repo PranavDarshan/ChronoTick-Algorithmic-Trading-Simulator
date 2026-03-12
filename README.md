@@ -59,7 +59,7 @@ A sophisticated paper trading platform that allows you to replay historical mark
 ### Prerequisites
 
 - **Node.js** 20.9 or higher
-- **Python** 3.8 or higher
+- **Python** 3.11.9
 - **npm** or **yarn**
 - Historical market data (CSV format)
 
@@ -87,8 +87,10 @@ A sophisticated paper trading platform that allows you to replay historical mark
 
 1. **Start the backend server**
    ```bash
-   cd backend
-   python main.py
+      cd backend
+      pip install -r requirements.txt
+      alembic upgrade head
+      uvicorn app.main:app --reload
    ```
    Backend runs on `http://127.0.0.1:8000`
 
