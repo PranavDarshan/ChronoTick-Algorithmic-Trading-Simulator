@@ -60,7 +60,7 @@ export default function AlgoExecutor({
   const squareOffInProgressRef = useRef(false)
   const marginCallCooldownRef = useRef<number | null>(null)  
   const [isInCooldown, setIsInCooldown] = useState(false)     
-
+  const API = import.meta.env.VITE_API_URL
   // Performance metrics
   const openPositions = positions.filter(p => p.status === 'OPEN')
   const closedPositions = positions.filter(p => p.status === 'CLOSED')
@@ -324,7 +324,7 @@ const executeStrategy = async () => {
     try {
       const currentOpenPositions = positions.filter(p => p.status === 'OPEN')
       
-      const response = await fetch("http://127.0.0.1:8000/api/execute-strategy", {
+      const response = await fetch(`${API}/api/execute-strategy`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
