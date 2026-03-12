@@ -325,13 +325,13 @@ export default defineConfig({
 Historical market data should be in CSV format with the following columns:
 
 ```csv
-timestamp,open,high,low,close,volume
-2015-01-09 09:15:00,100.50,101.25,100.25,101.00,1000000
-2015-01-09 09:16:00,101.00,101.50,100.75,101.25,1200000
+symbol,timestamp,open,high,low,close,volume
+NIFTY100,2015-01-09 09:15:00,100.50,101.25,100.25,101.00,1000000
+NIFTY100,2015-01-09 09:16:00,101.00,101.50,100.75,101.25,1200000
 ...
 ```
 
-Place CSV files in `backend/data/symbols/` with the symbol name as the filename (e.g., `AAPL.csv`, `GOOGL.csv`).
+The data must be added in the supabase database.
 
 ---
 
@@ -433,14 +433,15 @@ Contributions are welcome! Please follow these guidelines:
 ## Screenshots
 
 ### Main Trading Interface
-![Main Dashboard](docs/images/dashboard.png) *(Add screenshot)*
+![Main Dashboard](assets/Graph.png)
 
 ### Algo Editor
-![Strategy Editor](docs/images/algo-editor.png) *(Add screenshot)*
+![Strategy Editor](assets/AlgoEditor1.png)
 
-### Performance Analytics
-![Analytics](docs/images/analytics.png) *(Add screenshot)*
+### Algo Executor
+![Analytics](assets/AlgoExecutor2.png) 
 
+### For more images check out the assets folder.
 ---
 
 ## Getting Help
@@ -463,7 +464,7 @@ Contributions are welcome! Please follow these guidelines:
 
 ---
 
-**Happy Trading! **
+** Happy Trading! **
 
 ---
 
