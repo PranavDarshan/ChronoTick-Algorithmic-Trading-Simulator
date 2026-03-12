@@ -114,7 +114,7 @@ A sophisticated paper trading platform that allows you to replay historical mark
 ## Project Structure
 
 ```
-market-replay-simulator/
+ChronoTick-Algorithmic-Trading-Simulator/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -134,6 +134,41 @@ market-replay-simulator/
 │   └── vite.config.ts
 │
 ├── backend/
+│   │
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── algo_trading_backend.py
+│   │   │   ├── data.py
+│   │   │   ├── replay_ws.py
+│   │   │   └── upload.py
+│   │   │
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   ├── models.py
+│   │   │   └── session.py
+│   │   │
+│   │   ├── services/
+│   │   │   ├── replay_engine.py
+│   │   │   └── test_replay_engine.py
+│   │   │
+│   │   ├── __init__.py
+│   │   └── main.py
+│   │
+│   ├── alembic/
+│   │   ├── versions/
+│   │   ├── README
+│   │   ├── env.py
+│   │   └── script.py.mako
+│   │
+│   │
+│   ├── alembic.ini
+│   ├── requirements.txt
+│   ├── market.db
+│   ├── API.md
+│   ├── WEBSOCKET_TESTING.md
+│   └── README.md
+│
 ├── USAGE.md                         # User guide
 ├── README.md                        # This file
 └── LICENSE
