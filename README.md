@@ -16,7 +16,8 @@ A sophisticated paper trading platform that allows you to replay historical mark
 4. All of the data for these are obtained from the kaggle website https://www.kaggle.com/datasets/debashis74017/nifty-50-minute-data
 5. Other data can be added to the database to update the demo website by creating an open issue or you can fork and deploy this on your own on Render and Vercel.
 6. Data exists from 2015-01-09 to 2026-01-22
-7. My Supabase already consists of 3M rows
+7. My Supabase already consists of 3M+ rows
+8. Also, <b>important point to keep in mind is that the frontend is hosts the main branch and backend hosts the deployment branch.
 
 ## Features
 
