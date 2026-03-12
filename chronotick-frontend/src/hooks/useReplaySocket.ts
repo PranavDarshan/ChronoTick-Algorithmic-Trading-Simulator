@@ -118,7 +118,7 @@ export function useReplaySocket(params: Params) {
     setIsConnected(false)
 
     const ws = new WebSocket(
-      API.replace(/^http/, "ws") + "/ws"+
+      API.replace(/^http/, "ws") + "/ws/replay"+
         `?symbol=${encodeURIComponent(params.symbol)}` +
         `&start=${encodeURIComponent(params.start)}` +
         `&end=${encodeURIComponent(params.end)}` +
