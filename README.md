@@ -8,6 +8,9 @@ A sophisticated paper trading platform that allows you to replay historical mark
 ![Python](https://img.shields.io/badge/Python-3.8+-3776ab?logo=python&logoColor=white)
 
 ---
+
+![Main Dashboard](assets/Graph.png)
+
 ## Things to keep in mind for the demo
 
 1. Demo website: https://chrono-tick-algorithmic-trading-sim.vercel.app
@@ -442,9 +445,6 @@ Contributions are welcome! Please follow these guidelines:
 ---
 
 ## Screenshots
-
-### Main Trading Interface
-![Main Dashboard](assets/Graph.png)
 
 ### Algo Editor
 ![Strategy Editor](assets/AlgoEditor1.png)
