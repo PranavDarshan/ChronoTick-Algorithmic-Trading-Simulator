@@ -9,6 +9,20 @@ A sophisticated paper trading platform that allows you to replay historical mark
 
 ---
 
+![Main Dashboard](assets/Graph.png)
+
+## Things to keep in mind for the demo
+
+1. Demo website: https://chrono-tick-algorithmic-trading-sim.vercel.app
+2. The demo fronted is hosted on Vercel, backend is hosted on Render and the database of stocks is hosted on Supabase.
+3. Currently, the demo website feauteres stock symbols: NIFTY100, BANK NIFTY.
+4. All of the data for these are obtained from the kaggle website https://www.kaggle.com/datasets/debashis74017/nifty-50-minute-data
+5. Other data can be added to the database to update the demo website by forking and deploy this on your own on Render and Vercel.
+6. Data exists from 2015-01-09 to 2026-01-22.
+7. My Supabase already consists of 2M+ rows.
+8. Also, <b>important point to keep in mind is that the frontend is hosts the main branch and backend hosts the deployment branch.
+9. First replay or refresh takes some time for the backend to wake up as it is hosted on Render free tier.
+
 ## Features
 
 ### Market Replay
@@ -325,13 +339,13 @@ export default defineConfig({
 Historical market data should be in CSV format with the following columns:
 
 ```csv
-timestamp,open,high,low,close,volume
-2015-01-09 09:15:00,100.50,101.25,100.25,101.00,1000000
-2015-01-09 09:16:00,101.00,101.50,100.75,101.25,1200000
+symbol,timestamp,open,high,low,close,volume
+NIFTY100,2015-01-09 09:15:00,100.50,101.25,100.25,101.00,1000000
+NIFTY100,2015-01-09 09:16:00,101.00,101.50,100.75,101.25,1200000
 ...
 ```
 
-Place CSV files in `backend/data/symbols/` with the symbol name as the filename (e.g., `AAPL.csv`, `GOOGL.csv`).
+The data must be added in the supabase database.
 
 ---
 
@@ -432,15 +446,13 @@ Contributions are welcome! Please follow these guidelines:
 
 ## Screenshots
 
-### Main Trading Interface
-![Main Dashboard](docs/images/dashboard.png) *(Add screenshot)*
-
 ### Algo Editor
-![Strategy Editor](docs/images/algo-editor.png) *(Add screenshot)*
+![Strategy Editor](assets/AlgoEditor1.png)
 
-### Performance Analytics
-![Analytics](docs/images/analytics.png) *(Add screenshot)*
+### Algo Executor
+![Analytics](assets/AlgoExecutor2.png) 
 
+### For more images check out the assets folder.
 ---
 
 ## Getting Help
@@ -463,7 +475,7 @@ Contributions are welcome! Please follow these guidelines:
 
 ---
 
-**Happy Trading! **
+** Happy Trading! **
 
 ---
 
